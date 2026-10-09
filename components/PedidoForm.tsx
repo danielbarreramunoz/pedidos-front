@@ -46,7 +46,7 @@ export default function PedidoForm() {
 
     try {
       const API_URL =
-        process.env.NEXT_PUBLIC_API_URL || 'https://pedidos-back.onrender.com';
+        process.env.NEXT_PUBLIC_API_URL || 'https://pedidos-back-1zrh.onrender.com/pedidos';
       const body: CrearPedidoRequest = { platillo, cantidad };
       const response = await fetch(`${API_URL}/pedidos`, {
         method: 'POST',
